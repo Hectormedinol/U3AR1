@@ -1,1 +1,4 @@
 touch Valencia.txt Empate.txt Levante.txt
+sed -i 's/ /_/g' derbi.txt
+sed 's/,/ /g' derbi.txt
+cat derbi.txt | awk '{print $3, $4, $5}'| grep Valencia | sort -k3 | awk '{print $3, $2}' > Valencia.txt
