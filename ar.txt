@@ -1,2 +1,3 @@
 touch Valencia.txt Empate.txt Levante.txt
 cat derbi.txt | awk '{print $3, $4, $5}'| grep Levante | sort -k3 | awk '{print $3, $2}' > Levante.txt
+ cat derbi.txt | awk '{print $3, $4, $5}'| grep empate | sort -k3 | awk '{print $3, $2}' > Empate.txt
